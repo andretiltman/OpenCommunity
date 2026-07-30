@@ -1,7 +1,7 @@
 {
-  "name": "Valley Community",
-  "short_name": "Valley",
-  "description": "Groups, announcements and local business listings for the Valley Community.",
+  "name": "Open Community",
+  "short_name": "Open Community",
+  "description": "Groups, announcements and local business listings for your community.",
   "start_url": "./index.html",
   "scope": "./",
   "id": "./",

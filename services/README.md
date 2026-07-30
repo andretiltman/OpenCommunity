@@ -1,12 +1,12 @@
 # Service Listings
 
 This directory stores listings for tradespeople and service providers who
-work across the Valley rather than operating out of a fixed premises — e.g.
+work across your community rather than operating out of a fixed premises — e.g.
 plumbers, handymen, electricians, IT support. For businesses with a physical
 address, use [`../businesses/`](../businesses) instead.
 
 Each service is a single JSON file inside [`listings/`](./listings), named
-after the provider (lowercase, hyphen-separated), e.g. `listings/valley-it.json`.
+after the provider (lowercase, hyphen-separated), e.g. `listings/acme-it.json`.
 
 ## Listing format
 
@@ -29,7 +29,7 @@ after the provider (lowercase, hyphen-separated), e.g. `listings/valley-it.json`
 
 Only `name`, `category` and `description` are required — omit any field that
 doesn't apply. There's no `address` or `area` field: service providers are
-assumed to cover the whole Valley, so every listing shows up regardless of
+assumed to cover your whole community, so every listing shows up regardless of
 where the enquiry comes from.
 
 Set `featured` to `true` to showcase a listing: it gets a green outline
@@ -45,10 +45,10 @@ everywhere it's listed, and appears first (ahead of alphabetical order).
 
 ## Logos
 
-A listing can have its own logo shown in place of the generic Valley
+A listing can have its own logo shown in place of the generic Open
 Community icon on its detail page (`service.html?id=...`). Add an image to
 `logos/` (create the folder if it doesn't exist yet) named after the
-listing's file name — e.g. `listings/valley-it.json` → `logos/valley-it.jpg`
+listing's file name — e.g. `listings/acme-it.json` → `logos/acme-it.jpg`
 (`.png`/`.webp` also work).
 
 Services without a logo show an icon representing their `category` instead

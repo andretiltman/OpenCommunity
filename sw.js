@@ -1,4 +1,4 @@
-const CACHE_NAME = "valley-community-v17";
+const CACHE_NAME = "open-community-v1";
 const APP_SHELL = [
   "./",
   "./index.html",

@@ -1,13 +1,13 @@
 # Music
 
-This directory stores local artist and venue listings for the Valley
-Community's Music section (`../music.html`).
+This directory stores local artist and venue listings for the
+Music section (`../music.html`).
 
 - [`artists/`](./artists) — local musicians, bands and performers.
 - [`venues/`](./venues) — places that host live music (bars, restaurants, halls, etc.).
 
 Each entry is a single JSON file, named after the artist or venue
-(lowercase, hyphen-separated), e.g. `artists/the-fish-hoek-four.json`.
+(lowercase, hyphen-separated), e.g. `artists/the-riverside-four.json`.
 
 ## Artist format
 
@@ -21,7 +21,7 @@ Each entry is a single JSON file, named after the artist or venue
     "whatsapp": "https://wa.me/27000000000",
     "email": "optional@example.com"
   },
-  "area": "e.g. Fish Hoek",
+  "area": "e.g. Riverside",
   "website": "https://optional-website.example.com",
   "socials": {
     "instagram": "https://instagram.com/optional",
@@ -46,7 +46,7 @@ Only `name` and `description` are required — omit any field that doesn't apply
     "email": "optional@example.com"
   },
   "address": "Street, area",
-  "area": "e.g. Fish Hoek",
+  "area": "e.g. Riverside",
   "mapLink": "https://maps.app.goo.gl/optional-google-maps-link",
   "website": "https://optional-website.example.com"
 }
