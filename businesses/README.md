@@ -1,0 +1,63 @@
+# Business Listings
+
+This directory stores local business listings for the Valley Community.
+
+Each business is a single JSON file inside [`listings/`](./listings), named after
+the business (lowercase, hyphen-separated), e.g. `listings/green-valley-bakery.json`.
+
+## Listing format
+
+```json
+{
+  "name": "Business name",
+  "category": "e.g. Bakery, Plumber, Spaza Shop",
+  "description": "One or two sentences about the business.",
+  "featured": false,
+  "contact": {
+    "phone": "+27 00 000 0000",
+    "whatsapp": "https://wa.me/27000000000",
+    "email": "optional@example.com"
+  },
+  "address": "Street, area",
+  "area": "e.g. Fish Hoek",
+  "shoppingCenter": "e.g. Valyland Centre",
+  "mapLink": "https://maps.app.goo.gl/optional-google-maps-link",
+  "website": "https://optional-website.example.com",
+  "hours": "Mon-Fri 08:00-17:00",
+  "tags": ["food", "delivery"]
+}
+```
+
+Only `name`, `category` and `description` are required — omit any field that
+doesn't apply. Set `area` to the suburb/area the business is in (e.g. `Fish
+Hoek`) so it shows up when browsing [Areas](../areas.html). Set
+`shoppingCenter` to the name of the shopping center/mall the business is
+inside (e.g. `Valyland Centre` or `Longbeach Mall`) so it shows up when
+browsing [Shopping Centers](../shopping-centers.html).
+
+Set `featured` to `true` to showcase a business: it gets a green outline
+everywhere it's listed, and appears first (ahead of the alphabetical order)
+when browsing the [category](../categories.html) it belongs to. Featured
+businesses stay in alphabetical order everywhere else — the business
+directory, areas, and shopping centers.
+
+## Adding a listing
+
+1. Copy [`listings/_template.json`](./listings/_template.json).
+2. Rename it to match the business name (lowercase, hyphens instead of spaces).
+3. Fill in the details and remove any fields you don't need.
+4. Add the file name (without `.json`) to [`listings/index.json`](./listings/index.json).
+5. Open a pull request.
+
+## Logos
+
+A business can have its own logo shown in place of the generic Valley
+Community icon on its detail page (`business.html?id=...`). Add an image to
+[`logos/`](./logos) named after the listing's file name — e.g.
+`listings/sandis-bistro.json` → `logos/sandis-bistro.jpg` (`.png`/`.webp`
+also work). Overwriting that file replaces the logo, no code changes needed.
+
+In the business directory, area pages, and other listings, businesses
+without a logo show an icon representing their `category` instead (see
+`CATEGORY_ICONS` in `businesses.js`/`area.js`), falling back to 🏢 for
+categories without a specific icon.

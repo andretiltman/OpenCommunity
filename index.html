@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Valley Community</title>
+  <meta name="description" content="Groups, announcements and local business listings for the Valley Community." />
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0f3a5c" />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Valley" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <a class="hero-icon" href="index.html"><img src="icons/icon-192.png" alt="Valley Community" /></a>
+    <h1>Valley Community</h1>
+    <p>Groups &amp; local info for the Valley</p>
+  </header>
+
+  <div class="wrap">
+    <section id="events-section" hidden>
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="panel events-row" id="events-panel"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Emergency Contacts</h2>
+      <div class="card-list">
+        <a class="card" href="emergency-services.html">
+          <span class="card-icon">🚨</span>
+          <span class="card-body">
+            <strong>Emergency Services</strong>
+            <span>Police, fire &amp; medical contacts</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Local Directory</h2>
+      <div class="card-list">
+        <a class="card" href="businesses.html">
+          <span class="card-icon">🏪</span>
+          <span class="card-body">
+            <strong>Businesses</strong>
+            <span>Local business listings</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+
+        <a class="card" href="areas.html">
+          <span class="card-icon">🗺️</span>
+          <span class="card-body">
+            <strong>Areas</strong>
+            <span>Browse businesses by area</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+
+        <a class="card" href="categories.html">
+          <span class="card-icon">🏷️</span>
+          <span class="card-body">
+            <strong>Categories</strong>
+            <span>Browse businesses by type</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+
+        <a class="card" href="shopping-centers.html">
+          <span class="card-icon">🏬</span>
+          <span class="card-body">
+            <strong>Shopping Centers</strong>
+            <span>Browse businesses by shopping center</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Services</h2>
+      <div class="card-list">
+        <a class="card" href="services.html">
+          <span class="card-icon">🧰</span>
+          <span class="card-body">
+            <strong>List Services</strong>
+            <span>Plumbers, handymen &amp; other local services</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+
+        <a class="card" href="service-categories.html">
+          <span class="card-icon">🏷️</span>
+          <span class="card-body">
+            <strong>Service Categories</strong>
+            <span>Browse services by type</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Arts &amp; Culture</h2>
+      <div class="card-list">
+        <a class="card" href="music.html">
+          <span class="card-icon">🎵</span>
+          <span class="card-body">
+            <strong>Music</strong>
+            <span>Local artists &amp; venues</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">WhatsApp Groups</h2>
+      <div class="card-list">
+        <a class="card" href="https://chat.whatsapp.com/CIU1zbOdx4i7CuKqRQPb2a" target="_blank" rel="noopener">
+          <span class="card-icon">📢</span>
+          <span class="card-body">
+            <strong>Announcements</strong>
+            <span>Main group &middot; important updates</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+        <a class="card" href="https://chat.whatsapp.com/FlMuCSpyfqsH3lFpOtLCqf?s=cl&amp;p=a&amp;mlu=0&amp;ilr=0" target="_blank" rel="noopener">
+          <span class="card-icon">💬</span>
+          <span class="card-body">
+            <strong>Chat</strong>
+            <span>General community chat</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+        <a class="card" href="https://chat.whatsapp.com/FzwOR5R8HIaL66ZxbYNmmL" target="_blank" rel="noopener">
+          <span class="card-icon">🛒</span>
+          <span class="card-body">
+            <strong>Buy &amp; Sell</strong>
+            <span>Trade with your neighbours</span>
+          </span>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <div id="install-banner">
+      <p id="install-text">Install this app on your phone for quick access.</p>
+      <button id="install-button" type="button">Add to Home Screen</button>
+    </div>
+
+    <footer>
+      <p><a href="https://github.com/andretiltman/valleycommunity" target="_blank" rel="noopener">valleycommunity on GitHub</a></p>
+    </footer>
+  </div>
+
+  <script src="events.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
