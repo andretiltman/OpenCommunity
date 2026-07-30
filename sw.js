@@ -1,4 +1,4 @@
-const CACHE_NAME = "open-community-v1";
+const CACHE_NAME = "open-community-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -14,6 +14,8 @@ const APP_SHELL = [
   "./service-categories.html",
   "./music.html",
   "./styles.css",
+  "./config.js",
+  "./site.js",
   "./app.js",
   "./businesses.js",
   "./business.js",

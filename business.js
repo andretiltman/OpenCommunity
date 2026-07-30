@@ -137,7 +137,7 @@ async function loadBusiness() {
 
     if (title) title.textContent = item.name;
     if (subtitle) subtitle.textContent = item.category || "Business details";
-    document.title = `${item.name} · Open Community`;
+    document.title = `${item.name} · ${window.SITE_CONFIG?.name || "Open Community"}`;
 
     panel.innerHTML = "";
     panel.appendChild(renderBusiness(item));

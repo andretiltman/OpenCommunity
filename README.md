@@ -8,13 +8,12 @@ publish it as your own community's site.
 ## Getting started
 
 1. Use the "Use this template" button on GitHub (or fork/clone this repo).
-2. Rebrand it: search the repo for `Open Community` and replace it with your
-   community's name — it appears in `index.html`, every other `.html` page,
-   `manifest.webmanifest`, and this README.
+2. Rebrand it: edit [`config.js`](./config.js) — it's the single place that
+   drives the site's name, tagline, theme color, GitHub link, and group
+   links. Every page reads it, so one edit updates the whole site (page
+   titles, home screen name, PWA manifest, and the homepage).
 3. Swap `favicon.ico` and the images in [`icons/`](./icons) for your own.
-4. Update (or remove) the WhatsApp group links in `index.html` — they're
-   placeholders (`REPLACE_WITH_YOUR_GROUP_LINK`) by default.
-5. Enable GitHub Pages: Settings → Pages → deploy from the `main` branch,
+4. Enable GitHub Pages: Settings → Pages → deploy from the `main` branch,
    root folder.
 
 Once enabled, visitors can "Add to Home Screen" on mobile to install it like
@@ -22,8 +21,9 @@ an app.
 
 ## Groups
 
-Add links to your own community's group chats (WhatsApp, Telegram, etc.) in
-the "WhatsApp Groups" section of `index.html`.
+Edit the `whatsappGroups` list in [`config.js`](./config.js) with links to
+your own community's group chats (WhatsApp, Telegram, etc.), or set it to an
+empty array to hide the section on the homepage.
 
 ## Business Listings
 

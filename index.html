@@ -23,8 +23,8 @@
 <body>
   <header class="hero">
     <a class="hero-icon" href="index.html"><img src="icons/icon-192.png" alt="Open Community" /></a>
-    <h1>Open Community</h1>
-    <p>Groups &amp; local info for your community</p>
+    <h1 id="site-name">Open Community</h1>
+    <p id="site-tagline">Groups &amp; local info for your community</p>
   </header>
 
   <div class="wrap">
@@ -125,35 +125,10 @@
       </div>
     </section>
 
-    <!-- Replace these three links with your own WhatsApp (or other) group invites, or remove the section. -->
-    <section>
+    <!-- Populated from config.js's whatsappGroups — edit the list there, not here. -->
+    <section id="whatsapp-groups-section">
       <h2 class="section-title">WhatsApp Groups</h2>
-      <div class="card-list">
-        <a class="card" href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_LINK" target="_blank" rel="noopener">
-          <span class="card-icon">📢</span>
-          <span class="card-body">
-            <strong>Announcements</strong>
-            <span>Main group &middot; important updates</span>
-          </span>
-          <span class="card-arrow">›</span>
-        </a>
-        <a class="card" href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_LINK" target="_blank" rel="noopener">
-          <span class="card-icon">💬</span>
-          <span class="card-body">
-            <strong>Chat</strong>
-            <span>General community chat</span>
-          </span>
-          <span class="card-arrow">›</span>
-        </a>
-        <a class="card" href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_LINK" target="_blank" rel="noopener">
-          <span class="card-icon">🛒</span>
-          <span class="card-body">
-            <strong>Buy &amp; Sell</strong>
-            <span>Trade with your neighbours</span>
-          </span>
-          <span class="card-arrow">›</span>
-        </a>
-      </div>
+      <div class="card-list" id="whatsapp-groups-list"></div>
     </section>
 
     <div id="install-banner">
@@ -162,10 +137,12 @@
     </div>
 
     <footer>
-      <p><a href="https://github.com/andretiltman/OpenCommunity" target="_blank" rel="noopener">Built with the Open Community template</a></p>
+      <p><a id="footer-link" href="https://github.com/andretiltman/OpenCommunity" target="_blank" rel="noopener">Open Community on GitHub</a></p>
     </footer>
   </div>
 
+  <script src="config.js"></script>
+  <script src="site.js"></script>
   <script src="events.js"></script>
   <script src="app.js"></script>
 </body>

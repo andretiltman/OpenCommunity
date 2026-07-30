@@ -104,7 +104,7 @@ async function loadService() {
 
     if (title) title.textContent = item.name;
     if (subtitle) subtitle.textContent = item.category || "Service details";
-    document.title = `${item.name} · Open Community`;
+    document.title = `${item.name} · ${window.SITE_CONFIG?.name || "Open Community"}`;
 
     panel.innerHTML = "";
     panel.appendChild(renderService(item));
