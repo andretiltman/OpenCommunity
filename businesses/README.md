@@ -1,9 +1,9 @@
 # Business Listings
 
-This directory stores local business listings for the Valley Community.
+This directory stores local business listings for your community.
 
 Each business is a single JSON file inside [`listings/`](./listings), named after
-the business (lowercase, hyphen-separated), e.g. `listings/green-valley-bakery.json`.
+the business (lowercase, hyphen-separated), e.g. `listings/corner-bakery.json`.
 
 ## Listing format
 
@@ -19,8 +19,8 @@ the business (lowercase, hyphen-separated), e.g. `listings/green-valley-bakery.j
     "email": "optional@example.com"
   },
   "address": "Street, area",
-  "area": "e.g. Fish Hoek",
-  "shoppingCenter": "e.g. Valyland Centre",
+  "area": "e.g. Riverside",
+  "shoppingCenter": "e.g. Main Street Mall",
   "mapLink": "https://maps.app.goo.gl/optional-google-maps-link",
   "website": "https://optional-website.example.com",
   "hours": "Mon-Fri 08:00-17:00",
@@ -29,10 +29,10 @@ the business (lowercase, hyphen-separated), e.g. `listings/green-valley-bakery.j
 ```
 
 Only `name`, `category` and `description` are required — omit any field that
-doesn't apply. Set `area` to the suburb/area the business is in (e.g. `Fish
-Hoek`) so it shows up when browsing [Areas](../areas.html). Set
+doesn't apply. Set `area` to the suburb/area the business is in (e.g.
+`Riverside`) so it shows up when browsing [Areas](../areas.html). Set
 `shoppingCenter` to the name of the shopping center/mall the business is
-inside (e.g. `Valyland Centre` or `Longbeach Mall`) so it shows up when
+inside (e.g. `Main Street Mall` or `Lakeside Mall`) so it shows up when
 browsing [Shopping Centers](../shopping-centers.html).
 
 Set `featured` to `true` to showcase a business: it gets a green outline
@@ -51,10 +51,10 @@ directory, areas, and shopping centers.
 
 ## Logos
 
-A business can have its own logo shown in place of the generic Valley
+A business can have its own logo shown in place of the generic Open
 Community icon on its detail page (`business.html?id=...`). Add an image to
 [`logos/`](./logos) named after the listing's file name — e.g.
-`listings/sandis-bistro.json` → `logos/sandis-bistro.jpg` (`.png`/`.webp`
+`listings/corner-bakery.json` → `logos/corner-bakery.jpg` (`.png`/`.webp`
 also work). Overwriting that file replaces the logo, no code changes needed.
 
 In the business directory, area pages, and other listings, businesses

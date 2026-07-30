@@ -69,7 +69,7 @@ function loadServiceLogo(id, name) {
   let i = 0;
 
   function tryNext() {
-    if (i >= extensions.length) return; // fall back to the default Valley Community icon
+    if (i >= extensions.length) return; // fall back to the default Open Community icon
     const url = `services/logos/${id}.${extensions[i]}`;
     i++;
     const probe = new Image();
@@ -104,7 +104,7 @@ async function loadService() {
 
     if (title) title.textContent = item.name;
     if (subtitle) subtitle.textContent = item.category || "Service details";
-    document.title = `${item.name} · Valley Community`;
+    document.title = `${item.name} · ${window.SITE_CONFIG?.name || "Open Community"}`;
 
     panel.innerHTML = "";
     panel.appendChild(renderService(item));

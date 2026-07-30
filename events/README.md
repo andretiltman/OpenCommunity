@@ -2,15 +2,15 @@
 
 This directory stores event flyer images, one subfolder per business, named
 to match that business's listing file, e.g.
-`businesses/listings/sandis-bistro.json` → `events/sandis-bistro/`.
+`businesses/listings/corner-bakery.json` → `events/corner-bakery/`.
 
 ## Adding an event
 
 1. Create (or reuse) a folder here named after the business, e.g.
-   `events/sandis-bistro/`.
+   `events/corner-bakery/`.
 2. Name the image `<anything>-<expiry date>.<ext>`, where the expiry date is
    the last day the event should be shown, in `YYYY-MM-DD` format, e.g.:
-   - `events/sandis-bistro/busking-lineup-2026-07-31.jpg`
+   - `events/corner-bakery/spring-market-2026-12-31.jpg`
 3. Use `.jpg` (`.png`/`.webp` also work).
 4. Add the path (`folder/filename`) to [`index.json`](./index.json).
 5. Open a pull request.

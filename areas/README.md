@@ -14,9 +14,9 @@ on every page.
 
 1. Name your image after the area, lowercased with punctuation removed and
    spaces turned into hyphens, e.g.:
-   - `Fish Hoek` → `banners/fish-hoek.jpg`
-   - `Simon's Town` → `banners/simons-town.jpg`
-   - `Ocean View` → `banners/ocean-view.jpg`
+   - `Riverside` → `banners/riverside.jpg`
+   - `Harbor Town` → `banners/harbor-town.jpg`
+   - `Lakeview` → `banners/lakeview.jpg`
 2. Use `.jpg`, `.png`, or `.webp`.
 3. Drop the file into [`banners/`](./banners). If a banner with that name
    already exists, it's simply overwritten — no code changes needed.

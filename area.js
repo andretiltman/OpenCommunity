@@ -125,7 +125,7 @@ async function loadArea() {
   const emergencyPanel = document.getElementById("area-emergency-panel");
 
   if (title) title.textContent = area || "Area";
-  document.title = `${area || "Area"} · Valley Community`;
+  document.title = `${area || "Area"} · ${window.SITE_CONFIG?.name || "Open Community"}`;
   loadAreaBanner(area);
 
   businessesPanel.innerHTML = '<p class="list-status">Loading&hellip;</p>';
